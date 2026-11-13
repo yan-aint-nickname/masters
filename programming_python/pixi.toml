@@ -1,0 +1,17 @@
+[workspace]
+authors = ["Ян Кирш <ya.kirsh@mcplat.ru>"]
+channels = ["https://prefix.dev/conda-forge"]
+name = "programming_python"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.14.*"
+jupyterlab = ">=4.6.4,<5"
+r-base = ">=4.6.1,<4.7"
+py-opencv = ">=5.0.0,<6"
+beautifulsoup4 = ">=4.15.0,<5"
+pytest = ">=9.2.0,<10"
+schedule = ">=1.2.2,<2"

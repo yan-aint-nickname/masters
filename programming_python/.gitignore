@@ -1,0 +1,7 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+.DS_Store
+*.pyc
+venv/
+__pycache__/
