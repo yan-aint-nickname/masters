@@ -7,36 +7,51 @@ from bs4 import BeautifulSoup
 
 
 class HttpClient:
-    """HTTP-клиент-обертка над requests для упрощения тестирования."""
+    """HTTP-клиент на базе requests с возможностью подмены в тестах."""
+
     def get(self, url: str):
-        """GET-запрос"""
+        """Выполняет GET-запрос по указанному URL.
+
+        Args:
+            url: URL запрашиваемой страницы.
+
+        Returns:
+            Ответ requests.Response без проверки HTTP-статуса.
+
+        Raises:
+            requests.RequestException: Не удалось выполнить запрос.
+        """
         return requests.get(url)
 
 
 class Scraper:
-    """Класс скраппера инкапсулирующий логику."""
+    """Сборщик характеристик книг с сайта Books to Scrape.
+
+    Attributes:
+        http_client: Клиент HttpClient для загрузки страниц.
+    """
 
     def __init__(self, http_client: HttpClient):
+        """Инициализирует сборщик с переданным HTTP-клиентом.
+
+        Args:
+            http_client: Клиент для загрузки страниц.
+        """
         self.http_client = http_client
 
     def get_book_data(self, book_url: str) -> dict:
-        """Вычленяет информацию о продукте из тега таблицы в html по url.
+        """Возвращает данные книги и характеристики из Product Information.
 
-        Attrs:
-        book_url: Ссылка на продукт в виде строки
+        Args:
+            book_url: URL страницы книги с таблицей характеристик.
+
         Returns:
-        Словарь данных из таблицы продукта.
+            Словарь с title (название), rating (целое число от 1 до 5),
+            description (описание или пустая строка, если его нет) и строковыми
+            характеристиками из таблицы. Пробелы по краям текста удалены.
 
-        Пример:
-        {
-            "UPC": "a897fe39b1053632",
-            "Product Type": "Books",
-            "Price (excl. tax)": "£51.77",
-            "Price (incl. tax)": "£51.77",
-            "Tax": "£0.00",
-            "Availability": "In stock (22 available)",
-            "Number of reviews": "0",
-        }
+        Raises:
+            requests.RequestException: Не удалось загрузить страницу книги.
         """
         resp = self.http_client.get(book_url)
         soup = BeautifulSoup(resp.content, features="html.parser")
@@ -50,12 +65,33 @@ class Scraper:
             value = row.find("td").get_text(strip=True)
             data[key] = value
 
+        data["title"] = soup.find("h1").get_text(strip=True)
+
+        ratings = {"One": 1, "Two": 2, "Three": 3, "Four": 4, "Five": 5}
+        rating_classes = soup.find("p", class_="star-rating")["class"]
+        data["rating"] = next(
+            ratings[name] for name in rating_classes if name in ratings
+        )
+
+        description = soup.select_one("#product_description + p")
+        data["description"] = (
+            description.get_text(" ", strip=True) if description else ""
+        )
+
         return data
 
     @staticmethod
     def save_file(data: str, filepath: Path):
-        filepath.write_text(data)
+        """Записывает текст в файл, заменяя его содержимое, если он существует.
 
+        Args:
+            data: Текст для записи.
+            filepath: Путь к файлу в существующем каталоге.
+
+        Raises:
+            OSError: Не удалось записать файл.
+        """
+        filepath.write_text(data)
 
     def scrape_books(
         self,
@@ -65,14 +101,25 @@ class Scraper:
         catalogue: str | None = None,
         filepath: Path | None = None,
     ):
-        """Выгружает информацию о книгах и сохраняет в books_data.txt если задан флаг is_save.
+        """Собирает характеристики книг с необязательным сохранением в JSON.
 
-        Attrs:
-        is_save: Флаг сохранения выгрузки в books_data.txt
-        left: Левая граница книг каталога
-        right: Правая граница книг каталога
+        Args:
+            is_save: Сохранить результат в файл в формате JSON.
+            left: Номер первой страницы для сбора, начиная с 1.
+            right: Верхняя граница номеров страниц, не включая её.
+            catalogue: Путь относительно /catalogue/category/, например
+                "books_1". Если не задан, используются ссылки бокового каталога.
+            filepath: Путь к файлу результата. По умолчанию — books_data.txt
+                в текущем рабочем каталоге. Учитывается только при is_save=True;
+                существующий файл перезаписывается.
+
         Returns:
-        Словарь данных из таблицы продукта.
+            Словарь, где ключи — URL каталогов, а значения — списки словарей
+            характеристик книг, возвращённых get_book_data.
+
+        Raises:
+            requests.RequestException: Не удалось загрузить страницу.
+            OSError: Не удалось сохранить результат при is_save=True.
         """
         base_url = "http://books.toscrape.com"
         resp = self.http_client.get(f"{base_url}/index.html")
@@ -81,7 +128,9 @@ class Scraper:
         if not catalogue:
             catalogues_links = [
                 link.get("href")
-                for link in index_page.find("div", class_="side_categories").find_all("a")
+                for link in index_page.find("div", class_="side_categories").find_all(
+                    "a"
+                )
             ]
             catalogues = [urljoin(base_url, link) for link in catalogues_links]
         else:
@@ -101,10 +150,16 @@ class Scraper:
                     page_url = urljoin(cat, "index.html")
                     resp = self.http_client.get(page_url)
 
-                category_page = BeautifulSoup(resp.content)
+                category_page = BeautifulSoup(resp.content, features="html.parser")
 
                 books_links = category_page.find("section").find_all("a")
-                hrefs = [link.get("href").split("../")[-1] for link in books_links][:-1]
+                navigation_links = category_page.select("li.previous a, li.next a")
+
+                hrefs = [
+                    link.get("href").split("../")[-1]
+                    for link in books_links
+                    if link not in navigation_links
+                ]
 
                 books = {urljoin(base_url, f"/catalogue/{ref}") for ref in hrefs}
 
@@ -115,5 +170,7 @@ class Scraper:
 
         if is_save:
             filepath = filepath or Path("books_data.txt")
-            self.save_file(json.dumps(catalogue_books_map, ensure_ascii=False), filepath)
+            self.save_file(
+                json.dumps(catalogue_books_map, ensure_ascii=False), filepath
+            )
         return catalogue_books_map
