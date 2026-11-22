@@ -1,0 +1,301 @@
+product_id,brand,product_line,product_class,product_size,list_price,standard_cost
+1,Solex,Touring,entry,large,1211.84,655.67
+2,Giant Bicycles,Urban,professional,small,1836.39,1214.64
+3,OHM Cycles,Cargo,professional,XXS,3645.34,1787.62
+4,WeareA2B,Road,high,XL,868,507.6
+5,Norco Bicycles,Gravel,value,medium,2046.44,887.75
+6,Trek Bicycles,Electric,entry,XS,143.52,61.86
+7,Avanti,Standard,high,XXL,1698.75,774.54
+8,Merida,Mountain,entry,large,1197.53,734.11
+9,Cannondale,BMX,professional,small,2014.4,1460.8
+10,Specialized,Folding,entry,XXS,1598.5,1055.26
+11,Scott,Touring,value,XL,1519.08,1014.86
+12,Bianchi,Urban,medium,medium,566.13,329.65
+13,Kona,Cargo,high,XS,2191.44,1041.57
+14,Orbea,Road,performance,XXL,1905.77,1274.06
+15,Polygon,Gravel,performance,large,2576.48,1938.47
+16,Reid,Electric,performance,small,1709.43,812.75
+17,Focus,Standard,value,XXS,528.37,379.46
+18,Marin,Mountain,professional,XL,2148.89,1154.75
+19,Solex,BMX,performance,medium,1287.41,780.58
+20,Giant Bicycles,Folding,medium,XS,1156.07,828.96
+21,OHM Cycles,Touring,performance,XXL,1021.44,755.54
+22,WeareA2B,Urban,value,large,2389.9,1551.51
+23,Norco Bicycles,Cargo,professional,small,1167.03,542.06
+24,Trek Bicycles,Road,value,XXS,833.92,506
+25,Avanti,Gravel,entry,XL,1230.49,545.02
+26,Merida,Electric,professional,medium,3444.83,2452.86
+27,Cannondale,Standard,value,XS,744.58,505.25
+28,Specialized,Mountain,performance,XXL,2388.39,1314.19
+29,Scott,BMX,high,large,3739.54,2251.56
+30,Bianchi,Folding,entry,small,627.32,311.02
+31,Kona,Touring,entry,XXS,987.04,548.56
+32,Orbea,Urban,professional,XL,3019.83,2248.14
+33,Polygon,Cargo,entry,medium,661.62,281.19
+34,Reid,Road,professional,XS,2774.78,1933.38
+35,Focus,Gravel,medium,XXL,2184.19,926.97
+36,Marin,Electric,medium,large,2249.85,1119.29
+37,Solex,Standard,professional,small,4407.49,2206.02
+38,Giant Bicycles,Mountain,entry,XXS,630.54,420.88
+39,OHM Cycles,BMX,value,XL,1581.69,747.49
+40,WeareA2B,Folding,professional,medium,2976.6,1974.88
+41,Norco Bicycles,Touring,value,XS,1012.37,503.59
+42,Trek Bicycles,Urban,medium,XXL,1972.02,1372.58
+43,Avanti,Cargo,medium,large,2316.42,1098.9
+44,Merida,Road,medium,small,2681.48,1181.84
+45,Cannondale,Gravel,medium,XXS,3011.87,1658.88
+46,Specialized,Electric,medium,XL,397.06,240.64
+47,Scott,Standard,entry,medium,977.01,458.64
+48,Bianchi,Mountain,medium,XS,2458.18,1607.47
+49,Kona,BMX,high,XXL,380.55,255.95
+50,Orbea,Folding,performance,large,2416.95,1357.1
+51,Polygon,Touring,high,small,3448.68,1590.73
+52,Reid,Urban,performance,XXS,3180.58,1571.12
+53,Focus,Cargo,value,XL,452.89,328.28
+54,Marin,Road,entry,medium,836.56,523.83
+55,Solex,Gravel,value,XS,1138.13,504.89
+56,Giant Bicycles,Electric,medium,XXL,1315.97,866.75
+57,OHM Cycles,Standard,high,large,1098.47,813.33
+58,WeareA2B,Mountain,high,small,4038.07,1743.08
+59,Norco Bicycles,BMX,professional,XXS,4387,2137.91
+60,Trek Bicycles,Folding,medium,XL,1305.63,817.09
+61,Avanti,Touring,value,medium,1004.45,572.4
+62,Merida,Urban,performance,XS,3617.3,1726.11
+63,Cannondale,Cargo,high,XXL,2973.98,2014.74
+64,Specialized,Road,high,large,2022.79,1349.16
+65,Scott,Gravel,performance,small,899.98,505.27
+66,Bianchi,Electric,high,XXS,2977.39,2213.54
+67,Kona,Standard,high,XL,4537.42,2123.45
+68,Orbea,Mountain,professional,medium,4323.99,2627.34
+69,Polygon,BMX,entry,XS,1418.73,973.81
+70,Reid,Folding,professional,XXL,4208.41,2521.52
+71,Focus,Touring,value,large,282.91,139.45
+72,Marin,Urban,value,small,510.2,301.41
+73,Solex,Cargo,entry,XXS,1261.36,872.59
+74,Giant Bicycles,Road,medium,XL,699.39,406.52
+75,OHM Cycles,Gravel,high,medium,2083.75,1092.68
+76,WeareA2B,Electric,professional,XS,4890.43,2054.88
+77,Norco Bicycles,Standard,entry,XXL,403.86,188.72
+78,Trek Bicycles,Mountain,value,large,1953.5,1157.26
+79,Avanti,BMX,value,small,519.36,225.52
+80,Merida,Folding,professional,XXS,827.35,461.99
+81,Cannondale,Touring,high,XL,1491.69,672.44
+82,Specialized,Urban,high,medium,1823.9,1354.39
+83,Scott,Cargo,medium,XS,2444.12,1465.13
+84,Bianchi,Road,entry,XXL,509.07,315.42
+85,Kona,Gravel,value,large,1037.66,774.36
+86,Orbea,Electric,high,small,3176.69,1867.02
+87,Polygon,Standard,professional,XXS,921.94,470.34
+88,Reid,Mountain,medium,XL,1120.31,501.15
+89,Focus,BMX,high,medium,2522.16,1363.64
+90,Marin,Folding,medium,XS,2455.58,1482.19
+91,Solex,Touring,performance,XXL,2431.88,1022.45
+92,Giant Bicycles,Urban,entry,large,729.45,469.7
+93,OHM Cycles,Cargo,high,small,497.08,239.79
+94,WeareA2B,Road,performance,XXS,3735.52,2080.08
+95,Norco Bicycles,Gravel,value,XL,1175.47,564.36
+96,Trek Bicycles,Electric,professional,medium,4738.69,3189.43
+97,Avanti,Standard,entry,XS,1565.06,684.75
+98,Merida,Mountain,medium,XXL,1853.66,1183.53
+99,Cannondale,BMX,performance,large,947.39,528.16
+100,Specialized,Folding,high,small,2254.27,1432.39
+101,Scott,Touring,performance,XXS,3429.62,2049.62
+102,Bianchi,Urban,professional,XL,5236.31,3169.71
+103,Kona,Cargo,professional,medium,1540.57,977.65
+104,Orbea,Road,medium,XS,868.64,566.13
+105,Polygon,Gravel,high,XXL,3747.01,2426.08
+106,Reid,Electric,entry,large,603.56,367.14
+107,Focus,Standard,professional,small,552.49,406.19
+108,Marin,Mountain,professional,XXS,3697.03,2039.78
+109,Solex,BMX,high,XL,3133.11,2204.72
+110,Giant Bicycles,Folding,entry,medium,1448.46,1081.78
+111,OHM Cycles,Touring,performance,XS,2686.75,1554.07
+112,WeareA2B,Urban,performance,XXL,1753.87,1086.94
+113,Norco Bicycles,Cargo,performance,large,655.77,323.23
+114,Trek Bicycles,Road,entry,small,1184.21,770.83
+115,Avanti,Gravel,high,XXS,2572.87,1699.52
+116,Merida,Electric,professional,XL,4485.45,2046.33
+117,Cannondale,Standard,entry,medium,1111.98,650.07
+118,Specialized,Mountain,medium,XS,576.94,271.14
+119,Scott,BMX,value,XXL,956.92,546.75
+120,Bianchi,Folding,professional,large,913.53,526.39
+121,Kona,Touring,entry,small,379.42,229
+122,Orbea,Urban,entry,XXS,194.84,88.57
+123,Polygon,Cargo,medium,XL,2918.84,1390.45
+124,Reid,Road,professional,medium,1099.74,777.54
+125,Focus,Gravel,entry,XS,493.83,356.71
+126,Marin,Electric,value,XXL,1600.18,1177.28
+127,Solex,Standard,value,large,510.9,244.36
+128,Giant Bicycles,Mountain,professional,small,3590.85,1860.24
+129,OHM Cycles,BMX,professional,XXS,2702.24,1741.65
+130,WeareA2B,Folding,medium,XL,1590.49,985.43
+131,Norco Bicycles,Touring,value,medium,791.35,447.68
+132,Trek Bicycles,Urban,value,XS,2128.32,1400.29
+133,Avanti,Cargo,medium,XXL,448.66,322.41
+134,Merida,Road,high,large,4554.31,3362.69
+135,Cannondale,Gravel,medium,small,579.96,357.4
+136,Specialized,Electric,value,XXS,1977.87,1138.25
+137,Scott,Standard,medium,XL,2907.46,2170.5
+138,Bianchi,Mountain,high,medium,1336.05,596.15
+139,Kona,BMX,medium,XS,1449.75,1060.2
+140,Orbea,Folding,medium,XXL,366.6,214.15
+141,Polygon,Touring,value,large,1056.12,715.24
+142,Reid,Urban,performance,small,368.17,274.37
+143,Focus,Cargo,medium,XXS,2715.16,1187.38
+144,Marin,Road,professional,XL,1534.4,1000.98
+145,Solex,Gravel,entry,medium,1512.24,888.81
+146,Giant Bicycles,Electric,high,XS,930.34,496.12
+147,OHM Cycles,Standard,medium,XXL,2758.35,1383.67
+148,WeareA2B,Mountain,entry,large,1590.86,1182.37
+149,Norco Bicycles,BMX,medium,small,2978.75,2238
+150,Trek Bicycles,Folding,professional,XXS,3638.49,2051.04
+151,Avanti,Touring,professional,XL,2011.61,1078.74
+152,Merida,Urban,entry,medium,1256.76,720.64
+153,Cannondale,Cargo,performance,XS,2618.46,1518.88
+154,Specialized,Road,performance,XXL,1878.26,1388.98
+155,Scott,Gravel,high,large,1030.74,679.19
+156,Bianchi,Electric,entry,small,1423.77,1000.27
+157,Kona,Standard,value,XXS,904.17,476.1
+158,Orbea,Mountain,high,XL,608.76,310.93
+159,Polygon,BMX,medium,medium,592.97,386.69
+160,Reid,Folding,entry,XS,357.64,177.08
+161,Focus,Touring,professional,XXL,2819.31,1971.68
+162,Marin,Urban,high,large,1869.64,1263.28
+163,Solex,Cargo,professional,small,4869.59,3097.78
+164,Giant Bicycles,Road,performance,XXS,1863.67,1298.27
+165,OHM Cycles,Gravel,entry,XL,236.76,170.88
+166,WeareA2B,Electric,value,medium,219.39,164.59
+167,Norco Bicycles,Standard,high,XS,718.59,320.58
+168,Trek Bicycles,Mountain,performance,XXL,2713.93,1509.38
+169,Avanti,BMX,high,large,2093.45,1027.75
+170,Merida,Folding,performance,small,1166.84,596.65
+171,Cannondale,Touring,performance,XXS,1518.03,876.95
+172,Specialized,Urban,entry,XL,1618.59,976.15
+173,Scott,Cargo,value,medium,447.55,297.92
+174,Bianchi,Road,performance,XS,1878.66,1168.43
+175,Kona,Gravel,medium,XXL,1159.31,730.41
+176,Orbea,Electric,medium,large,1725.33,1161.48
+177,Polygon,Standard,high,small,4334.92,2646.57
+178,Reid,Mountain,medium,XXS,1227,619.9
+179,Focus,BMX,entry,XL,542.84,305.12
+180,Marin,Folding,entry,medium,956.12,470.52
+181,Solex,Touring,professional,XS,4085.15,1791.34
+182,Giant Bicycles,Urban,professional,XXL,833.27,583.59
+183,OHM Cycles,Cargo,value,large,933.13,596.37
+184,WeareA2B,Road,high,small,1393.24,1016.64
+185,Norco Bicycles,Gravel,professional,XXS,3910.97,2784.97
+186,Trek Bicycles,Electric,high,XL,2128.39,902.52
+187,Avanti,Standard,high,medium,1471.39,803.36
+188,Merida,Mountain,medium,XS,1170.28,744.71
+189,Cannondale,BMX,entry,XXL,364.69,250.71
+190,Specialized,Folding,high,large,1302.13,729.93
+191,Scott,Touring,high,small,2256.09,1504.62
+192,Bianchi,Urban,high,XXS,3354.57,1953.85
+193,Kona,Cargo,professional,XL,4501.11,3394.73
+194,Orbea,Road,performance,medium,805,536.71
+195,Polygon,Gravel,entry,XS,794.13,417.16
+196,Reid,Electric,value,XXL,2024.88,947.09
+197,Focus,Standard,high,large,893,472.97
+198,Marin,Mountain,professional,small,1152.11,653.61
+199,Solex,BMX,high,XXS,645.62,276.29
+200,Giant Bicycles,Folding,medium,XL,2356.23,1316.28
+201,OHM Cycles,Touring,professional,medium,2891.49,1495.78
+202,WeareA2B,Urban,entry,XS,267.8,133.94
+203,Norco Bicycles,Cargo,medium,XXL,2330.29,1382.08
+204,Trek Bicycles,Road,performance,large,3226.95,2016.26
+205,Avanti,Gravel,value,small,1964.31,868.31
+206,Merida,Electric,entry,XXS,1162.56,840.75
+207,Cannondale,Standard,medium,XL,1316.74,907.38
+208,Specialized,Mountain,professional,medium,5221.85,2705.02
+209,Scott,BMX,professional,XS,3103.01,2339.31
+210,Bianchi,Folding,professional,XXL,3313.3,2084.87
+211,Kona,Touring,high,large,3094.8,1420.78
+212,Orbea,Urban,high,small,2067.23,1254.46
+213,Polygon,Cargo,value,XXS,2137.24,1521.47
+214,Reid,Road,high,XL,2230.23,1609.86
+215,Focus,Gravel,entry,medium,507.39,225.57
+216,Marin,Electric,value,XS,1129.83,827.78
+217,Solex,Standard,medium,XXL,2003.51,1459.68
+218,Giant Bicycles,Mountain,entry,large,1123.23,794.03
+219,OHM Cycles,BMX,performance,small,1194.12,520.4
+220,WeareA2B,Folding,professional,XXS,4579.19,2343.25
+221,Norco Bicycles,Touring,performance,XL,526,385.76
+222,Trek Bicycles,Urban,entry,medium,828.48,397.7
+223,Avanti,Cargo,medium,XS,1018.42,451.24
+224,Merida,Road,professional,XXL,1567.14,999.58
+225,Cannondale,Gravel,entry,large,1175.64,598.15
+226,Specialized,Electric,medium,small,1562.27,1095.79
+227,Scott,Standard,professional,XXS,2676.47,1210.17
+228,Bianchi,Mountain,performance,XL,2469.47,1046.45
+229,Kona,BMX,medium,medium,1287.02,922.15
+230,Orbea,Folding,value,XS,1977.71,936.62
+231,Polygon,Touring,professional,XXL,860.21,396.91
+232,Reid,Urban,performance,large,2205.19,1323.07
+233,Focus,Cargo,performance,small,1542.13,1109.45
+234,Marin,Road,medium,XXS,2666.46,1398.43
+235,Solex,Gravel,entry,XL,1121.27,536.93
+236,Giant Bicycles,Electric,value,medium,828.43,624.9
+237,OHM Cycles,Standard,professional,XS,2117.1,1580.39
+238,WeareA2B,Mountain,high,XXL,3595.81,2067.97
+239,Norco Bicycles,BMX,high,large,782.5,422.12
+240,Trek Bicycles,Folding,high,small,2185.61,1432.18
+241,Avanti,Touring,value,XXS,1921.1,1180.51
+242,Merida,Urban,entry,XL,386.05,181.98
+243,Cannondale,Cargo,high,medium,873.91,513.58
+244,Specialized,Road,value,XS,805.46,573.11
+245,Scott,Gravel,high,XXL,2691.92,1528.58
+246,Bianchi,Electric,entry,large,913.72,531.65
+247,Kona,Standard,performance,small,1765.66,906.35
+248,Orbea,Mountain,value,XXS,1268.01,533.48
+249,Polygon,BMX,performance,XL,1442.75,609.22
+250,Reid,Folding,professional,medium,4887.15,3682.24
+251,Focus,Touring,entry,XS,1464.09,972.89
+252,Marin,Urban,value,XXL,1233.61,520.33
+253,Solex,Cargo,performance,large,3249.13,2464.89
+254,Giant Bicycles,Road,entry,small,1052.46,586.75
+255,OHM Cycles,Gravel,entry,XXS,565.22,388.77
+256,WeareA2B,Electric,entry,XL,1580.71,741.73
+257,Norco Bicycles,Standard,high,medium,4385.64,1848.4
+258,Trek Bicycles,Mountain,performance,XS,1204.6,635.92
+259,Avanti,BMX,entry,XXL,1092.4,546.74
+260,Merida,Folding,performance,large,937.09,608.79
+261,Cannondale,Touring,professional,small,1424.11,882.04
+262,Specialized,Urban,medium,XXS,2411.35,1142.31
+263,Scott,Cargo,medium,XL,1057.34,495.4
+264,Bianchi,Road,entry,medium,647.79,440.32
+265,Kona,Gravel,entry,XS,1157.86,710.75
+266,Orbea,Electric,medium,XXL,988.29,491.12
+267,Polygon,Standard,professional,large,887.28,376.7
+268,Reid,Mountain,medium,small,1454.83,693.81
+269,Focus,BMX,value,XXS,1587.3,1109.37
+270,Marin,Folding,professional,XL,5098.1,3287.95
+271,Solex,Touring,medium,medium,2820.74,1211.81
+272,Giant Bicycles,Urban,medium,XS,1444.18,652.58
+273,OHM Cycles,Cargo,performance,XXL,3677.57,1688.39
+274,WeareA2B,Road,performance,large,3764.97,1724.5
+275,Norco Bicycles,Gravel,professional,small,3838.54,2756.84
+276,Trek Bicycles,Electric,entry,XXS,1060.23,506.7
+277,Avanti,Standard,entry,XL,796.72,382
+278,Merida,Mountain,high,medium,3132.54,1458.76
+279,Cannondale,BMX,entry,XS,301.95,162.24
+280,Specialized,Folding,high,XXL,3474.49,2448.01
+281,Scott,Touring,professional,large,427.52,272.68
+282,Bianchi,Urban,professional,small,1382.95,1027.49
+283,Kona,Cargo,professional,XXS,3051.75,2289.15
+284,Orbea,Road,performance,XL,3295.4,2176.15
+285,Polygon,Gravel,value,medium,1523.62,825.82
+286,Reid,Electric,medium,XS,2653.05,1549.12
+287,Focus,Standard,value,XXL,2018.29,1426.25
+288,Marin,Mountain,performance,large,2374.43,1489.9
+289,Solex,BMX,professional,small,1995.76,944.36
+290,Giant Bicycles,Folding,medium,XXS,624.93,309.48
+291,OHM Cycles,Touring,high,XL,2675.64,1599.1
+292,WeareA2B,Urban,high,medium,3045.18,1926.25
+293,Norco Bicycles,Cargo,professional,XS,1721.64,1301.83
+294,Trek Bicycles,Road,performance,XXL,521.87,246.39
+295,Avanti,Gravel,medium,large,1000.01,515.64
+296,Merida,Electric,value,small,363.95,269.01
+297,Cannondale,Standard,medium,XXS,480.53,320.96
+298,Specialized,Mountain,professional,XL,4307.01,2812.02
+299,Scott,BMX,medium,medium,1966.59,1369.93
+300,Bianchi,Folding,performance,XS,1238.6,621.77

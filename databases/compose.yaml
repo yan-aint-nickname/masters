@@ -6,6 +6,4 @@ services:
       POSTGRES_USER: learning
       POSTGRES_PASSWORD: learning
     ports:
-      - "5432:5432"
-    volumes:
-      - pgdata:/var/lib/postgresql/data
+      - "54322:5432"
